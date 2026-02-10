@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Page title shown in browser tab -->
+    <title>About - Vita Vera</title>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes site responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- W3.CSS framework -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+    <!-- Internal CSS styling -->
+    <style>
+        /* Default body font */
+        body {
+            font-family: "", Georgia, Serif;
+        }
+
+        /* Heading font styling */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--navigation bar-->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+
+            <!-- Logo / Home link -->
+            <a href="index.html" class="w3-bar-item w3-button">Vita Vera</a>
+
+            <!--Navigation links (hidden on small screens)-->
+            <div class="w3-right w3-hide-small">
+                <a href="index.html" class="w3-bar-item w3-button">About</a>
+                <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+                <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+                <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main page content -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- About section row -->
+        <div class="w3-row w3-padding-64">
+
+            <!--Left column image (hidden on small screens)-->
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="images/fancy.png" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+            </div>
+
+            <!--Right column text content-->
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">About Catering</h1><br>
+                <h5 class="w3-center">Tradition since 1889</h5>
+
+                <!--Main description paragraph-->
+                <p class="w3-large">
+                    The Catering was founded in 1999 by Mr.Carpenter, this was meant to spread our high quality italian
+                    food to anybody at anytime or place.
+                    We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Button to open modal-->
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+        More Info
+    </button>
+
+    <!--Modal popup-->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+
+            <!--Close button -->
+            <span onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+
+            <!--Modaltext-->
+            <p>
+                Our catering business is built around the belief that great food brings people together and turns
+                ordinary events into unforgettable moments...
+            </p>
+
+            <p>
+                Our family’s catering journey began generations ago in a small town in Italy...
+            </p>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+        <p>WHS WebDesign</p>
+    </footer>
+
+</body>
+
+</html>
